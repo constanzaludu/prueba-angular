@@ -1,0 +1,63 @@
+{
+    "header": {
+        "item1": "Featured characters",
+        "item2": "Character spotlight",
+        "item3": "Marvel character list"
+    },
+    "welcome": {
+        "title": "Welcome to the official website of ",
+        "name": "Marvel",
+        "login": "Log in to get a full access to Marvel content",
+        "button": "Log in"
+    },
+    "footer": {
+        "author": "Constanza Ludueña",
+        "rights": "All rights reserved",
+        "follow": "Follow Marvel"
+    },
+    "form": {
+        "login": "Log in",
+        "email": "Email",
+        "valid_email": "Please enter a valid email address",
+        "is": "is",
+        "required": "required",
+        "password": "Enter your password",
+        "password_min_characters": "Minimum eight characters, at least one letter and one number",
+        "valid_password": "Please enter a valid password",
+        "login_button": "Login",
+        "no-account": "You don´t have an account?",
+        "register": "Register now",
+        "forgotten-password": "Have you forgotten you password? Click",
+        "here": "here"
+    },
+    "register-user": {
+        "title": "Sign up",
+        "new-pass": "New password",
+        "repete-pass": "Repete new password",
+        "accept": "Accept",
+        "cancel": "Cancel"
+    },
+    "retrieve-pass": {
+        "title": "Recover password"
+    },
+    "go-back": {
+        "button": "Go back"
+    },
+    "not-found": {
+        "title": "404",
+        "subtitle": "Page not found",
+        "message": "The page you are looking for doesn't exist or an other error ocurred"
+    },
+    "table":{
+        "char_title": "Marvel characters",
+        "comics_title": "Marvel comics",
+        "id_click": "Click on the ID of the characters to take a look at their comics",
+        "detail_click": "Click on the character's detail button to take a look at their information",
+        "scroll": "Scroll to the sides to see all the information"
+    },
+    "card":{
+        "title": "Character detail",
+        "name": "Name",
+        "id": "ID"
+    }
+}

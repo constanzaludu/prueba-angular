@@ -1,0 +1,37 @@
+@import "../../styles/mixins";
+@import "../../styles/colors";
+
+
+.navbar {
+    position: fixed;
+    z-index: 9999;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+    height: 50px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: $color-black;
+    display: flex;
+    justify-content: center;
+    border: rgb(48, 48, 48) solid 1px;
+  
+    .navbar-logo-button {
+      display: flex;
+      align-items: center;
+      img {
+        height: 30px;
+      }
+      a {
+        display: inherit;    
+    }
+  }
+}
+
+
+
+@media (max-width: 760px) {
+ 
+ 
+}

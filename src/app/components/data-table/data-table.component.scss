@@ -1,0 +1,90 @@
+@import '../../styles/colors';
+@import '../../styles/mixins'; 
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    @extend %flex-center;
+    background-image: url(../../../assets/images/peakpx.jpg);
+    table{
+        margin: 0 1rem 5rem;
+        width: -webkit-fill-available;
+        overflow-x: auto;
+        background-color: $color-white-opacity;
+        border-radius: 10px;
+            th{
+                font-weight: bold;
+                text-transform:uppercase;
+                text-align: center;
+            }
+            .mat-cell,
+            .mat-header-cell {
+                word-wrap: initial;
+                display: table-cell;
+                padding: 3px;
+                }
+            img{
+                height: 40px;
+                width: 40px;
+                border-radius: 40px;
+            }
+            .mat-button{
+                color: $color-black;
+            }
+    }
+    .table-text{
+        margin-top: 3rem;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        color: $color-white;
+    }
+    h1{
+        font-weight: bold;
+        padding:0px;
+
+        &:hover{
+            background-color: $color-primary;
+            color: $color-black;
+            border-radius: 30px;
+        }
+    }
+    .id-click{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        .click-box{
+            width: 230px;
+            background-color: $color-primary;
+            color: $color-white;
+            text-align: center;
+            margin: 0 1rem 1rem;
+            border-radius:10px;
+            padding: 5px;
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+    
+@media (min-width: 760px) {
+    .id-click{
+        .click-box{
+            margin: 0 3rem 1rem !important;
+            &:hover{
+                background-color: $color-primary-opacity !important;
+            }
+        }
+    }
+    table{
+        text-align: center;
+        margin: 0 3rem 5rem;
+        .mat-header-cell {
+            margin: 30px !important;
+            }
+            th{
+                font-size: 1rem;
+            }
+    }
+}

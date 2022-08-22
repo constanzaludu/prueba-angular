@@ -1,0 +1,26 @@
+<!-- <div class="container-div">
+    <h1> {{title}} </h1>
+    <span *ngFor="let element of data | async">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <mat-card-title>{{ element.title }}</mat-card-title>
+            <mat-card-subtitle>{{"card.id" | translate}}: {{ element.id }}</mat-card-subtitle>
+          </mat-card-header>
+        </mat-card>
+      </span>
+      <app-go-back-button></app-go-back-button>
+</div> -->
+
+<form [formGroup]="myForm">
+  <div class="form-div" *ngFor="let element of data | async">
+    <mat-form-field appearance="fill">
+      <mat-label>ID</mat-label>
+      <input matInput formControlName="idForm">{{"card.id" | translate}}: {{ element.id }}
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="titleForm">{{ element.title }}
+    </mat-form-field>
+    <app-go-back-button></app-go-back-button>
+  </div>
+</form>

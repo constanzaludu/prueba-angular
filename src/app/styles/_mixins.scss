@@ -1,0 +1,46 @@
+@import '../styles/colors';
+
+@mixin fontStyle {
+    color: $color-white;
+    font-family: Roboto;
+  }
+  @mixin fontStyleBlack {
+    color: $color-black;
+    font-family: Roboto;
+    font-size: 1rem;
+  }
+  @mixin fontStyleBlackTitle {
+    color: $color-black;
+    font-family: Roboto;
+    font-size: 2rem;
+  }
+
+@mixin buttonStyle {
+  background-color: $color-primary;
+  color: $color-black;
+  font-family: Roboto;
+  font-weight: bold;
+  width: 120px;
+  &:hover{
+    background-color: $color-primary-light;
+  }
+}
+@mixin listStyle {
+  list-style: none;
+  color: $color-dark-gray;
+  &:hover {
+    color: white;
+    transition: all 0.5s ease;
+  }
+}
+@mixin fullScreen {
+  height: 100vh;
+  width: 100%;
+}
+
+%flex-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,16 @@
+<div class="welcome-div">
+    <div class="welcome-content">
+      <h1 class="welcome-title">
+        {{ 'welcome.title' | translate }}<br />
+        <span>{{'welcome.name' | translate | uppercase}}</span>
+      </h1>
+      <p class="welcome-text">
+        {{ 'welcome.login' | translate }}
+      </p>
+      <button class="login-button" *ngIf="!loading" mat-raised-button  
+      (click)="login()" 
+      @enterState
+      >{{ 'welcome.button' | translate | uppercase}}</button>
+      <app-progress-spinner *ngIf="loading" ></app-progress-spinner>
+    </div>
+</div>

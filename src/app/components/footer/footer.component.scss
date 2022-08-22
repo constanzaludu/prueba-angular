@@ -1,0 +1,31 @@
+@import '../../styles/colors';
+@import '../../styles/mixins';
+
+.footer-container{
+    position: fixed;
+    color: $color-white;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $color-black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .footer-row{
+        height: fit-content;
+        justify-content: space-between;
+        line-height: 1;
+        text-align: end;
+        .marvel-icon{
+            height: 40px !important;
+        }
+        p {
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+        small{
+            font-size: 12px;
+        }
+
+    }
+    }

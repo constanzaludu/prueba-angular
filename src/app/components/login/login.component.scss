@@ -1,0 +1,33 @@
+@import '../../styles/colors';
+@import '../../styles/mixins'; 
+
+.welcome-div{
+    background-image: url(../../../assets/images/background-img-welcome.jpg);
+    background-position: center;
+    @include fullScreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    @include fontStyle;
+        .welcome-content{
+            padding: 0 1.5rem;
+            margin-left: 1rem;
+        }
+        .welcome-title{
+            font-weight: bold;
+            span{
+                color: $color-primary;
+            }
+        }
+        .login-button{
+            @include buttonStyle;
+        }
+}
+@media (min-width: 760px) {
+    .welcome-div{
+        background-position: left;
+    }
+
+}
+
